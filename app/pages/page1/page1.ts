@@ -57,15 +57,15 @@ export class Page1 implements OnInit, OnDestroy {
     // have a string, do the search
     this._dataService.getSearchResults(q)
       .subscribe(
-      // process the results..
-      (data) => {
-        console.log('search results', data.hits)
-        this.items = data.hits
-      },
-      // handle an error condition...
-      (err) => alert("Error Searching: " + err),
-      // called when completely done processing
-      () => { console.log("All Good With The Data") }
+        // process the results..
+        (data) => {
+          console.log('search results', data.hits)
+          this.items = data.hits
+        },
+        // handle an error condition...
+        (err) => alert("Error Searching: " + err),
+        // called when completely done processing
+        () => { console.log("All Good With The Data") }
       );
   }
 
