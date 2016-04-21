@@ -25,6 +25,7 @@ export class DataService {
         // set the parameters for the http request, these will be 
         // added to the query string
         let params: URLSearchParams = new URLSearchParams();
+        params.set('results', '0:50')
         params.set('appId', this.APP_ID);
         params.set('appKey', this.API_KEY);
         params.set('fields', fields)

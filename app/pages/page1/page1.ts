@@ -1,4 +1,4 @@
-import {Page} from 'ionic-angular';
+import {Page, Loading, NavController} from 'ionic-angular';
 import { DataService } from '../../dataService';
 import {
   OnInit,
@@ -21,7 +21,7 @@ export class Page1 implements OnInit, OnDestroy {
   // the search string
   searchQuery
 
-  constructor(private _dataService: DataService) {
+  constructor(private _dataService: DataService, private _nav: NavController) {
 
     // be sure to initizalize the model objects to avoid
     // weird errors in the console
@@ -54,18 +54,27 @@ export class Page1 implements OnInit, OnDestroy {
       return;
     }
 
+    let loading = Loading.create({
+      content: 'Searching, Please Wait...'
+    });
+    this._nav.present(loading);
+    
+
     // have a string, do the search
     this._dataService.getSearchResults(q)
       .subscribe(
-        // process the results..
-        (data) => {
-          console.log('search results', data.hits)
-          this.items = data.hits
-        },
-        // handle an error condition...
-        (err) => alert("Error Searching: " + err),
-        // called when completely done processing
-        () => { console.log("All Good With The Data") }
+      // process the results..
+      (data) => {
+        console.log('search results', data.hits)
+        this.items = data.hits
+      },
+      // handle an error condition...
+      (err) => alert("Error Searching: " + err),
+      // called when completely done processing
+      () => {
+        console.log("All Good With The Data");
+        loading.dismiss()
+      }
       );
   }
 
