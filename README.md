@@ -56,3 +56,7 @@ Node Version: v4.4.1
         () => { console.log("All Good With The Data") }
       );
 ```
+##MORE IONIC2 SAMPLES HERE
+- [https://github.com/aaronksaunders/ionic2-firebase-sample](https://github.com/aaronksaunders/ionic2-firebase-sample)
+- [https://github.com/aaronksaunders/ionic2-angularfire-sample](https://github.com/aaronksaunders/ionic2-angularfire-sample)
+- [https://github.com/aaronksaunders/kinvey-starter-ionic2](https://github.com/aaronksaunders/kinvey-starter-ionic2)
