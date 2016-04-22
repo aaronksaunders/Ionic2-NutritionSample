@@ -4,6 +4,16 @@ This is a sample application based on off a Ionic2 to show the use of http in an
 
 In this example, we are using https://developer.nutritionix.com/for nutrition information; showing how to access REST API using ngFor directive for rendering the data.
 
+####Ionic Version Information
+```
+Cordova CLI: 6.0.0
+Ionic Framework Version: 2.0.0-beta.6
+Ionic CLI Version: 2.0.0-beta.25
+Ionic App Lib Version: 2.0.0-beta.15
+OS:
+Node Version: v4.4.1
+```
+
 ####Function in service to query REST API
 ```javascript
     getSearchResults(_searchString) {
