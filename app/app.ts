@@ -1,12 +1,12 @@
 import 'es6-shim';
-import {App, Platform} from 'ionic-angular';
+import {Component} from '@angular/core';
+import {ionicBootstrap, Platform} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {Page1} from './pages/page1/page1';
-import { HTTP_PROVIDERS }    from 'angular2/http';
+import { HTTP_PROVIDERS }   from '@angular/http';
 
-@App({
+@Component({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
-  config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {
   rootPage: any = Page1;
@@ -19,3 +19,5 @@ export class MyApp {
     });
   }
 }
+
+ionicBootstrap(MyApp);

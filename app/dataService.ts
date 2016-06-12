@@ -1,5 +1,5 @@
-import {Injectable}     from 'angular2/core';
-import {Http, Response, URLSearchParams} from 'angular2/http';
+import {Injectable}     from '@angular/core';
+import {Http, Response, URLSearchParams} from '@angular/http';
 // Add all operators to Observable, needed for adding
 // .map() on to the end of the http request
 import 'rxjs/Rx';

@@ -3,7 +3,7 @@ import { DataService } from '../../dataService';
 import {
   OnInit,
   OnDestroy
-} from 'angular2/core';
+} from '@angular/core';
 
 
 @Page({
@@ -50,7 +50,7 @@ export class Page1 implements OnInit, OnDestroy {
   getItems() {
     // clean up the string, if empty then exit
     let q = this.searchQuery.trim()
-    if (q == '') {
+    if (q == '' || q.length < 5) {
       return;
     }
 
