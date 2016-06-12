@@ -6,12 +6,17 @@ In this example, we are using https://developer.nutritionix.com/for nutrition in
 
 ####Ionic Version Information
 ```
-Cordova CLI: 6.0.0
-Ionic Framework Version: 2.0.0-beta.6
-Ionic CLI Version: 2.0.0-beta.25
-Ionic App Lib Version: 2.0.0-beta.15
-OS:
-Node Version: v4.4.1
+Cordova CLI: 5.4.1
+Gulp version:  CLI version 3.9.0
+Gulp local:   Local version 3.9.1
+Ionic Framework Version: 2.0.0-beta.8
+Ionic CLI Version: 2.0.0-beta.24
+Ionic App Lib Version: 2.0.0-beta.14
+ios-deploy version: 1.8.3
+ios-sim version: 5.0.6
+OS: Mac OS X Yosemite
+Node Version: v5.0.0
+Xcode version: Xcode 7.2.1 Build version 7C1002
 ```
 
 ####Function in service to query REST API
