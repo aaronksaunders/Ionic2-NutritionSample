@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Nutrition Test v2
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="page1">
+  <ion-searchbar [(ngModel)]="searchQuery" debounce=2000 (ionInput)="getItems($event)">
+  </ion-searchbar>
+  <h3>MY PAGE</h3>
+  <ion-list>
+    <ion-item text-wrap *ngFor="let item of items">
+      {{item.fields.brand_name}} - {{item.fields.item_name}} - Calories: {{item.fields.nf_calories}}
+    </ion-item>
+  </ion-list>
+</ion-content>
