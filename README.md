@@ -2,6 +2,11 @@
 
 This is a sample application based on off a Ionic2 to show the use of http in an application. 
 
+### YouTube Channel
+--
+#### [Check out the videos and leave suggestions for new ones and subscribe for updates](https://www.youtube.com/c/AaronSaundersCI)
+--
+
 In this example, we are using https://developer.nutritionix.com/for nutrition information; showing how to access REST API using ngFor directive for rendering the data.
 
 ####Ionic Version Information
